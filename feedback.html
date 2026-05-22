@@ -1,54 +1,52 @@
 <!DOCTYPE html>
-<br lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="submit" method="post"></form>
-    <h1>Feedback</h1>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a></div>
+    <div class="main-content">
+        <div class="content-box">
+            <h1>Feedback Form</h1>
+            <form action="submit" method="post">
 
-    <label for="username">Username: </label>
-    <input type="text" id="username" placeholder="Enter your username"><br></br>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username">
+                <br><br>
 
-    <label for="Email">Email: </label>
-    <input type="email" id="Email" placeholder="Danuwar@gmail.com"><br></br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="example@gmail.com">
+                <br><br>
 
-    <p>Rating Section</p>
-    <input type="radio" id="Very satisfied" name="Rating" value="Very satisfied">
-    <label for="Very satisfied">Very satisfied</label>
+                <p class="highlight">Rating Section</p>
+                <input type="radio" name="rating"> Very Satisfied
+                <input type="radio" name="rating"> Satisfied
+                <input type="radio" name="rating"> Neutral
+                <input type="radio" name="rating"> Unsatisfied<br><br>
 
-    <input type="radio" id="Satisfied" name="Rating" value="Satisfied">
-    <label for="satisfied">Satisfied</label>
+                <p>Interest Section</p>
+                <input type="checkbox"> Web Development <br><br>
+                <input type="checkbox"> Mobile Development <br><br>
+                <input type="checkbox"> AI & Machine Learning<br><br>
 
-    <input type="radio" id="Neutral" name="Rating" value="Neutral">
-    <label for="Neutral">Neutral</label>
-
-    <input type="radio" id="Unsatisfied" name="Rating" value="Unsatisfied">
-    <label for="Unsatisfied">Unsatisfied</label><br></br>
-
-    <p>Interest Section</p>
-    <input type="checkbox" id="Web Development" name="Interest Section" value="Web Development">
-    <label for="Web Development">Web Development</label><br></br>
-
-    <input type="checkbox" id="Mobile Development" name="Interest Section" value="Mobile Development">
-    <label for="Mobile Development">Mobile Development</label><br></br>
-
-    <input type="checkbox" id="AI & Machine Learning" name="Interest Section" value="AI & Machine Learning">
-    <label for="AI & Machine Learning">AI & Machine Learning</label><br></br>
-
-    <label for="Countries">Country Selection</label><br>
-    <select name="Countries" id="Countries">
-        <option value="" disable selected> Choose Countries</option>
-        <option value="Nepal">Nepal</option>
-        <option value="USA">USA</option>
-        <option value="China">China</option>
-    </select><br></br>
-
-    <label for="message">Write your feedback here:</label><br>
-    <textarea id="message" name="message" rows="5" cols="30" placeholder="Enter your feedback" maxlength="200" required></textarea><br><br>
-
-    <button type="submit">Submit</button>
+                <label for="countries">Country Selection</label><br>
+                <select id="countries">
+                    <option>Choose Country</option>
+                    <option>Nepal</option>
+                    <option>USA</option>
+                    <option>China</option></select>
+                <br><br>
+                <label for="message">Write your feedback here:</label>
+                <br><textarea id="message" rows="5" cols="30"></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
