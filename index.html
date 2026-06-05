@@ -4,44 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
     <style>
-        h3{color: green;}
+        h3{
+            color:green;
+        }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="feedback.html">Feedback</a>
-    </div>
-    <div class="main-content">
-        <div class="content-box">
-            <h1 id="special-heading">Welcome to My First Webpage</h1>
-            <p style="color: purple;">Hello, My name is <span>Biraj Danuwar</span>.I am currently 21 years old.</p>
-            <p class="highlight"> I am learning web development and love technology.</p>
 
-            <div class="important-box"> Important</div>
-        </div>
-        <h2 class="sticky-heading">My Hobbies</h2>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Welcome to my Website</a>
 
-        <ol>
-            <li>Watching Movies</li>
-            <li>Playing Video Games</li>
-            <li>Playing Cricket</li>
-        </ol>
-        <h3>My Favorite Food</h3>
-        <ul>
-            <li>Mo:Mo</li>
-            <li>Masu Bhat</li>
-            <li>Sweets</li>
-        </ul>
-<p>I enjoy learning new technologies and improving my web development skills every day.</p>
-<p>Currently, I am learning HTML, CSS, JavaScript, GitHub, Vercel, AWS, and Terraform.</p>
-<p>My goal is to become a successful web developer and build modern websites and applications.</p>
-<p>I like solving technical problems and understanding how websites work behind the scenes.</p>
-<p>In my free time, I enjoy watching movies, playing video games, and playing cricket.</p>
-<p>I also enjoy exploring new tools and practicing coding projects to improve my skills.</p>
-<p>I believe continuous learning and practice are important for success in technology.</p></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li></ul></div></div>
+</nav>
+
+<div class="container main-content">
+    <div class="content-box">
+        <h1 id="special-heading">Welcome to My First Webpage</h1>
+        <p style="color: purple;">Hello, My name is <span>Biraj Danuwar</span>. I am currently 21 years old.</p>
+        <p class="highlight">I am learning web development and love technology.</p>
+        <div class="important-box">Important</div></div>
+
+    <h2 class="sticky-heading">My Hobbies</h2>
+    <ol>
+        <li>Watching Movies</li>
+        <li>Playing Video Games</li>
+        <li>Playing Cricket</li>
+    </ol>
+
+    <h3>My Favorite Food</h3>
+    <ul>
+        <li>Mo:Mo</li>
+        <li>Masu Bhat</li>
+        <li>Sweets</li>
+    </ul>
+
+    <p>I enjoy learning new technologies and improving my web development skills every day.</p>
+    <p>Currently, I am learning HTML, CSS, JavaScript, GitHub, Vercel, AWS, and Terraform.</p>
+    <p>My goal is to become a successful web developer and build modern websites and applications.</p>
+    <p>I like solving technical problems and understanding how websites work behind the scenes.</p>
+    <p>In my free time, I enjoy watching movies, playing video games, and playing cricket.</p>
+    <p>I also enjoy exploring new tools and practicing coding projects to improve my skills.</p>
+    <p>I believe continuous learning and practice are important for success in technology.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
